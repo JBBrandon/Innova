@@ -1,0 +1,105 @@
+/* Estilos específicos para la página de Kits de Cultivo */
+
+#kits {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#kits h1 {
+    color: black;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+#kits p {
+    color: #333333;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.kit {
+    background-color: #ffffff; /* Fondo blanco para cada kit */
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.kit img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.kit h2 {
+    font-size: 2em;
+    color: #C0392B; /* Color rojo para el título */
+    margin-bottom: 10px;
+}
+
+.kit p {
+    font-size: 1.1em;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #C0392B; /* Rojo */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f39c12; /* Color amarillo para hover */
+    color: #ffffff;
+}
+/* Estilos adicionales para los botones y los detalles de los kits */
+
+/* Botón "Ver Detalles" */
+.btn-ver-detalles {
+    background-color: #C0392B;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.btn-ver-detalles:hover {
+    background-color: #f39c12;
+}
+
+/* Detalles del Kit */
+.detalles-kit {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.detalles-kit h3 {
+    font-size: 2em;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.detalles-kit ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    font-size: 1.2em;
+    color: #555555;
+}

@@ -1,0 +1,51 @@
+/* Estilos específicos para la página de inicio (index.html) */
+
+#hero {
+    background-color: #e74c3c; /* Rojo claro para la sección de bienvenida */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffffff; /* Botón blanco */
+    color: #C0392B; /* Texto rojo */
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f39c12; /* Botón amarillo al pasar el cursor */
+    color: #ffffff;
+}
+
+#about {
+    background-color: #333333; /* Fondo gris oscuro */
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}

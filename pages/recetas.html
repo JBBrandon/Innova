@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Nutritivas</title>
+    <link rel="stylesheet" href="/css/styles.css">  <!-- Estilos comunes -->
+    <link rel="stylesheet" href="/css/recetas.css">    <!-- Estilos específicos para recetas -->
+</head>
+<body>
+    <!-- Contenedor donde se insertará la navbar -->
+    <div id="navbar-container"></div>
+
+    <!-- Sección de Recetas Nutritivas -->
+    <section id="recetas">
+        <h1>Recetas Nutritivas para la Comunidad</h1>
+        <p>Descubre recetas fáciles y saludables que puedes preparar con ingredientes frescos.</p>
+
+        <!-- Receta 1 -->
+        <div class="receta">
+            <h2>Ensalada de Quinoa y Vegetales</h2>
+            <img src="/assets/img/ensalada.webp" alt="Ensalada de Quinoa y Vegetales">
+            <p>Una ensalada fresca y rica en proteínas, perfecta para acompañar tus comidas o como plato principal.</p>
+            <button class="btn-ver-detalles" onclick="toggleDetails('receta1')">Ver Detalles</button>
+            <div id="receta1" class="detalles-receta" style="display: none;">
+                <h3>Ingredientes:</h3>
+                <ul>
+                    <li>1 taza de quinoa cocida</li>
+                    <li>1 pepino picado</li>
+                    <li>1 pimiento rojo picado</li>
+                    <li>Tomates cherry partidos a la mitad</li>
+                    <li>Aceite de oliva extra virgen</li>
+                    <li>Zumo de limón</li>
+                    <li>Sal y pimienta al gusto</li>
+                </ul>
+                <h3>Instrucciones:</h3>
+                <ol>
+                    <li>Cocina la quinoa según las instrucciones del paquete.</li>
+                    <li>En un bol grande, mezcla la quinoa con los vegetales picados.</li>
+                    <li>Añade el aceite de oliva, el zumo de limón, sal y pimienta al gusto.</li>
+                    <li>Mezcla bien y sirve fresca.</li>
+                </ol>
+                <p><strong>Tiempo de preparación:</strong> 20 minutos</p>
+            </div>
+        </div>
+
+        <!-- Receta 2 -->
+        <div class="receta">
+            <h2>Sopa de Lentejas y Verduras</h2>
+            <img src="/assets/img/sopagarbasos.webp" alt="Sopa de Lentejas y Verduras">
+            <p>Una sopa reconfortante y llena de nutrientes, ideal para los días fríos.</p>
+            <button class="btn-ver-detalles" onclick="toggleDetails('receta2')">Ver Detalles</button>
+            <div id="receta2" class="detalles-receta" style="display: none;">
+                <h3>Ingredientes:</h3>
+                <ul>
+                    <li>1 taza de lentejas</li>
+                    <li>2 zanahorias picadas</li>
+                    <li>1 cebolla picada</li>
+                    <li>1 pimiento verde picado</li>
+                    <li>2 dientes de ajo picados</li>
+                    <li>1 litro de caldo de verduras</li>
+                    <li>1 hoja de laurel</li>
+                    <li>Sal y pimienta al gusto</li>
+                </ul>
+                <h3>Instrucciones:</h3>
+                <ol>
+                    <li>En una olla, sofríe la cebolla, ajo y zanahorias hasta que estén tiernas.</li>
+                    <li>Agrega las lentejas, el caldo de verduras y la hoja de laurel.</li>
+                    <li>Cocina a fuego medio durante 30-40 minutos hasta que las lentejas estén suaves.</li>
+                    <li>Agrega sal y pimienta al gusto antes de servir.</li>
+                </ol>
+                <p><strong>Tiempo de preparación:</strong> 45 minutos</p>
+            </div>
+        </div>
+
+        <!-- Receta 3 -->
+        <div class="receta">
+            <h2>Tacos de Garbanzos</h2>
+            <img src="/assets/img/tacos.webp" alt="Tacos de Garbanzos">
+            <p>Un delicioso plato vegano lleno de sabor, ideal para cualquier comida del día.</p>
+            <button class="btn-ver-detalles" onclick="toggleDetails('receta3')">Ver Detalles</button>
+            <div id="receta3" class="detalles-receta" style="display: none;">
+                <h3>Ingredientes:</h3>
+                <ul>
+                    <li>1 taza de garbanzos cocidos</li>
+                    <li>1 aguacate picado</li>
+                    <li>1 cebolla morada picada</li>
+                    <li>2 tortillas de maíz</li>
+                    <li>Salsa de tomate</li>
+                    <li>Cilantro fresco picado</li>
+                    <li>Sal y pimienta al gusto</li>
+                </ul>
+                <h3>Instrucciones:</h3>
+                <ol>
+                    <li>En una sartén, calienta los garbanzos con un poco de aceite y sal.</li>
+                    <li>Calienta las tortillas en otra sartén.</li>
+                    <li>Rellena las tortillas con los garbanzos, aguacate, cebolla y salsa de tomate.</li>
+                    <li>Decora con cilantro fresco y disfruta.</li>
+                </ol>
+                <p><strong>Tiempo de preparación:</strong> 15 minutos</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Proyecto de Cultivo y Nutrición | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="/js/scripts.js"></script>
+    <script>
+        function toggleDetails(recetaId) {
+            // Obtener el contenedor de los detalles de la receta
+            var detalles = document.getElementById(recetaId);
+
+            // Verificar si el contenedor está oculto o visible
+            if (detalles.style.display === "none") {
+                detalles.style.display = "block";  // Mostrar detalles
+            } else {
+                detalles.style.display = "none";  // Ocultar detalles
+            }
+        }
+
+    </script>
+</body>
+</html>

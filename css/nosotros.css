@@ -1,0 +1,84 @@
+/* Estilos para la página de Sobre Nosotros */
+
+/* Estilo para la sección general */
+#nosotros {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#nosotros h1 {
+    font-size: 3em;
+    color: #C0392B; /* Rojo oscuro */
+    margin-bottom: 30px;
+}
+
+#nosotros p {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Estilo para la lista de miembros del equipo */
+#equipo ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+#equipo ul li {
+    margin: 10px 0;
+}
+
+/* Estilo para la sección de Justificación */
+#justificacion {
+    margin-top: 40px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#justificacion h2 {
+    font-size: 2.5em;
+    color: #C0392B;
+    margin-bottom: 20px;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.img-justificacion {
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.texto-justificacion {
+    width: 50%;
+    text-align: left;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.texto-justificacion ul {
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}

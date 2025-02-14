@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kits de Cultivo</title>
+    <link rel="stylesheet" href="/css/styles.css">  <!-- Estilos comunes -->
+    <link rel="stylesheet" href="/css/kits.css">    <!-- Estilos específicos para kits -->
+</head>
+<body>
+    <!-- Contenedor donde se insertará la navbar -->
+    <div id="navbar-container"></div>
+
+    <!-- Sección de Kits -->
+    <section id="kits">
+        <h1>Nuestros Kits de Cultivo</h1>
+        <p>Selecciona el kit que más se adapte a tus necesidades y comienza a cultivar tus propios alimentos en casa.</p>
+
+        <!-- Kit 1 -->
+        <div class="kit">
+            <img src="/assets/img/basico.webp" alt="Kit Básico de Cultivo">
+            <h2>Kit Básico de Cultivo</h2>
+            <p>Este kit contiene todo lo que necesitas para empezar a cultivar hierbas y pequeños vegetales en tu hogar. Ideal para principiantes.</p>
+            <button class="btn-ver-detalles" onclick="toggleDetails('kit1')">Ver Detalles</button>
+            <div id="kit1" class="detalles-kit" style="display: none;">
+                <h3>Contenido del Kit:</h3>
+                <ul>
+                    <li>Semillas de albahaca, menta, y perejil.</li>
+                    <li>Macetas biodegradables.</li>
+                    <li>Tierra orgánica para cultivos pequeños.</li>
+                    <li>Instrucciones detalladas para cultivar en casa.</li>
+                </ul>
+                <p><strong>Precio:</strong> $19.99</p>
+            </div>
+        </div>
+
+        <!-- Kit 2 -->
+        <div class="kit">
+            <img src="/assets/img/avansado.webp" alt="Kit Avanzado de Cultivo">
+            <h2>Kit Avanzado de Cultivo</h2>
+            <p>Perfecto para quienes buscan un desafío mayor, incluye herramientas adicionales, más variedades de semillas y un manual detallado.</p>
+            <button class="btn-ver-detalles" onclick="toggleDetails('kit2')">Ver Detalles</button>
+            <div id="kit2" class="detalles-kit" style="display: none;">
+                <h3>Contenido del Kit:</h3>
+                <ul>
+                    <li>Semillas de tomate, pepino, y zanahoria.</li>
+                    <li>Macetas y herramientas de jardinería.</li>
+                    <li>Fertilizantes orgánicos.</li>
+                    <li>Manual avanzado con consejos para cultivos más grandes.</li>
+                </ul>
+                <p><strong>Precio:</strong> $39.99</p>
+            </div>
+        </div>
+
+        <!-- Kit 3 -->
+        <div class="kit">
+            <img src="/assets/img/familiar.webp" alt="Kit Familiar de Cultivo">
+            <h2>Kit Familiar de Cultivo</h2>
+            <p>Un kit completo para toda la familia. Incluye cultivos para el jardín o la terraza, perfecto para compartir la experiencia de cultivar en conjunto.</p>
+            <button class="btn-ver-detalles" onclick="toggleDetails('kit3')">Ver Detalles</button>
+            <div id="kit3" class="detalles-kit" style="display: none;">
+                <h3>Contenido del Kit:</h3>
+                <ul>
+                    <li>Semillas de lechuga, zanahoria, y girasol.</li>
+                    <li>Macetas grandes para cultivo en el jardín.</li>
+                    <li>Kit de herramientas para toda la familia.</li>
+                    <li>Manual para cultivo familiar y en equipo.</li>
+                </ul>
+                <p><strong>Precio:</strong> $59.99</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Proyecto de Cultivo y Nutrición | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="/js/scripts.js"></script>
+    <script>
+        function toggleDetails(kitId) {
+            // Obtener el contenedor de los detalles del kit
+            var detalles = document.getElementById(kitId);
+
+            // Verificar si el contenedor está oculto o visible
+            if (detalles.style.display === "none") {
+                detalles.style.display = "block";  // Mostrar detalles
+            } else {
+                detalles.style.display = "none";  // Ocultar detalles
+            }
+        }
+
+    </script>
+</body>
+</html>
