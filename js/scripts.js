@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Verifica que la ruta al navbar.html sea correcta
-    fetch('/pages/navbar.html')  // Ajusta la ruta dependiendo de la ubicación
+    fetch('../navbar.html')  // Ajusta la ruta dependiendo de la ubicación
         .then(response => response.text())
         .then(data => {
             // Asegúrate de que el navbar se inserte correctamente en el contenedor
