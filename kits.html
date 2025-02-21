@@ -6,6 +6,8 @@
     <title>Kits de Cultivo</title>
     <link rel="stylesheet" href="./css/styles.css">  <!-- Estilos comunes -->
     <link rel="stylesheet" href="./css/kits.css">    <!-- Estilos específicos para kits -->
+    <!-- Agregar el CDN de AOS para animaciones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
 </head>
 <body>
     <!-- Contenedor donde se insertará la navbar -->
@@ -24,12 +26,12 @@
         </ul>
     </nav>
     <!-- Sección de Kits -->
-    <section id="kits">
+    <section id="kits" data-aos="fade-up">
         <h1>Nuestros Kits de Cultivo</h1>
         <p>Selecciona el kit que más se adapte a tus necesidades y comienza a cultivar tus propios alimentos en casa.</p>
 
         <!-- Kit 1 -->
-        <div class="kit">
+        <div class="kit" data-aos="zoom-in">
             <img src="./assets/img/basico.webp" alt="Kit Básico de Cultivo">
             <h2>Kit Básico de Cultivo</h2>
             <p>Este kit contiene todo lo que necesitas para empezar a cultivar hierbas y pequeños vegetales. Ideal para principiantes.</p>
@@ -47,8 +49,8 @@
         </div>
 
         <!-- Kit 2 -->
-        <div class="kit">
-            <img src="./assets/img/avansado.webp" alt="Kit Avanzado de Cultivo">
+        <div class="kit" data-aos="zoom-in">
+            <img src="./assets/img/avansado.webp" alt="Kit Avanzado de Cultivo" >
             <h2>Kit Avanzado de Cultivo</h2>
             <p>Perfecto para quienes buscan un desafío mayor, incluye herramientas adicionales, más variedades de semillas y un manual detallado.</p>
             <button class="btn-ver-detalles" onclick="toggleDetails('kit2')">Ver Detalles</button>
@@ -65,7 +67,7 @@
         </div>
 
         <!-- Kit 3 -->
-        <div class="kit">
+        <div class="kit" data-aos="zoom-in">
             <img src="./assets/img/familiar.webp" alt="Kit Familiar de Cultivo">
             <h2>Kit Familiar de Cultivo</h2>
             <p>Un kit completo para toda la familia. Perfecto para compartir la experiencia de cultivar en conjunto.</p>
@@ -104,5 +106,15 @@
 
     </script>
     <script src="./js/script.js"></script>
+    <!-- Inicializa AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.onload = function() {
+            AOS.init({
+                duration: 1000,  // Duración de la animación
+                once: true        // Solo se ejecuta una vez
+            });
+        };
+    </script>
 </body>
 </html>

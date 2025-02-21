@@ -6,6 +6,8 @@
     <title>Recetas Nutritivas</title>
     <link rel="stylesheet" href="./css/styles.css">  <!-- Estilos comunes -->
     <link rel="stylesheet" href="./css/recetas.css">    <!-- Estilos específicos para recetas -->
+    <!-- Agregar el CDN de AOS para animaciones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
 </head>
 <body>
     <!-- Contenedor donde se insertará la navbar -->
@@ -25,12 +27,12 @@
     </nav>
 
     <!-- Sección de Recetas Nutritivas -->
-    <section id="recetas">
+    <section id="recetas" data-aos="fade-up">
         <h1>Recetas Nutritivas para la Comunidad</h1>
         <p>Descubre recetas fáciles y saludables que puedes preparar con ingredientes frescos.</p>
 
         <!-- Receta 1 -->
-        <div class="receta">
+        <div class="receta" data-aos="zoom-in">
             <h2>Ensalada de Quinoa y Vegetales</h2>
             <img src="./assets/img/ensalada.webp" alt="Ensalada de Quinoa y Vegetales">
             <p>Una ensalada fresca y rica en proteínas, perfecta para acompañar tus comidas o como plato principal.</p>
@@ -58,7 +60,7 @@
         </div>
 
         <!-- Receta 2 -->
-        <div class="receta">
+        <div class="receta" data-aos="zoom-in">
             <h2>Sopa de Lentejas y Verduras</h2>
             <img src="./assets/img/sopagarbasos.webp" alt="Sopa de Lentejas y Verduras">
             <p>Una sopa reconfortante y llena de nutrientes, ideal para los días fríos.</p>
@@ -87,7 +89,7 @@
         </div>
 
         <!-- Receta 3 -->
-        <div class="receta">
+        <div class="receta" data-aos="zoom-in">
             <h2>Tacos de Garbanzos</h2>
             <img src="./assets/img/tacos.webp" alt="Tacos de Garbanzos">
             <p>Un delicioso plato vegano lleno de sabor, ideal para cualquier comida del día.</p>
@@ -137,5 +139,15 @@
 
     </script>
     <script src="./js/script.js"></script>
+    <!-- Inicializa AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.onload = function() {
+            AOS.init({
+                duration: 1000,  // Duración de la animación
+                once: true        // Solo se ejecuta una vez
+            });
+        };
+    </script>
 </body>
 </html>

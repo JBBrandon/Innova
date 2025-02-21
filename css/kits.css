@@ -104,6 +104,10 @@
     font-size: 1.2em;
     color: #555555;
 }
+[data-aos="fade-up"] {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
 
 /* Media Queries for Responsiveness */
 
