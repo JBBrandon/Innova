@@ -105,3 +105,95 @@ footer p {
     margin: 0;
     font-size: 1em;
 }
+
+/* Media Queries for Responsiveness */
+
+/* For small devices like smartphones */
+@media (max-width: 767px) {
+    #recetas {
+        padding: 30px 15px;
+    }
+
+    #recetas h1 {
+        font-size: 2.5em;
+    }
+
+    .receta {
+        padding: 15px;
+    }
+
+    .receta h2 {
+        font-size: 2em;
+    }
+
+    .receta img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .receta p {
+        font-size: 1.1em;
+    }
+
+    .btn-ver-detalles {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+
+    .detalles-receta {
+        padding: 15px;
+    }
+
+    .detalles-receta h3 {
+        font-size: 1.8em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
+/* For medium devices like tablets */
+@media (max-width: 1024px) {
+    #recetas {
+        padding: 50px 20px;
+    }
+
+    #recetas h1 {
+        font-size: 2.8em;
+    }
+
+    .receta {
+        padding: 20px;
+    }
+
+    .receta h2 {
+        font-size: 2.3em;
+    }
+
+    .receta img {
+        max-width: 85%;
+        height: auto;
+    }
+
+    .receta p {
+        font-size: 1.2em;
+    }
+
+    .btn-ver-detalles {
+        padding: 10px 20px;
+        font-size: 1.1em;
+    }
+
+    .detalles-receta {
+        padding: 20px;
+    }
+
+    .detalles-receta h3 {
+        font-size: 2.2em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}

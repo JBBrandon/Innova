@@ -1,10 +1,23 @@
-/* Estilos específicos para la página de inicio (index.html) */
 
+
+/* Sección de Bienvenida */
 #hero {
-    background-color: #e74c3c; /* Rojo claro para la sección de bienvenida */
+    position: relative;
+    background-color: #e74c3c;
+    display: flex;
+    flex-direction: row;
     color: white;
     text-align: center;
     padding: 100px 20px;
+    z-index: 0;
+}
+
+.hero-img {
+    width: 25vw;
+    height: 25vw;
+    margin-left: 7rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 #hero h1 {
@@ -17,10 +30,11 @@
     margin-bottom: 30px;
 }
 
+/* Botón de llamada a la acción */
 .cta-button {
     display: inline-block;
-    background-color: #ffffff; /* Botón blanco */
-    color: #C0392B; /* Texto rojo */
+    background-color: #ffffff;
+    color: #C0392B;
     padding: 15px 30px;
     font-size: 1.2em;
     font-weight: bold;
@@ -29,14 +43,15 @@
 }
 
 .cta-button:hover {
-    background-color: #f39c12; /* Botón amarillo al pasar el cursor */
-    color: #ffffff;
+    background-color: #f39c12;
+    color: white;
 }
 
+/* Sección Sobre Nosotros */
 #about {
     background-color: #333333; /* Fondo gris oscuro */
-    color: #ffffff;
-    padding: 50px 20px;
+    color: white;
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -48,4 +63,127 @@
 #about p {
     font-size: 1.2em;
     line-height: 1.6;
+}
+
+/* Sección de Beneficios */
+#benefits {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#benefits h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #C0392B;
+}
+
+.benefit {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.benefit img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.benefit p {
+    font-size: 2rem;
+    color: #333333;
+}
+
+/* Sección de Llamada a la acción */
+#cta {
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Animación AOS */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+[data-aos="fade-up"] {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    #hero {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+    #hero h1 {
+        font-size: 2.2em;
+    }
+
+    #hero p {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    #about h2 {
+        font-size: 2em;
+    }
+
+    #about p {
+        font-size: 1em;
+    }
+
+    #benefits h2 {
+        font-size: 2em;
+    }
+
+    .benefit p {
+        font-size: 1em;
+    }
+
+    #cta h2 {
+        font-size: 2em;
+    }
+
+    /* Ajustar la imagen de la bienvenida */
+    .hero-img {
+        margin-bottom: 20px;
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
 }

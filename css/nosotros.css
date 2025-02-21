@@ -1,6 +1,6 @@
-/* Estilos para la página de Sobre Nosotros */
+/* Estilos para la página de "Sobre Nosotros" */
 
-/* Estilo para la sección general */
+/* Sección principal de "Nosotros" */
 #nosotros {
     background-color: #f4f4f4;
     padding: 40px 20px;
@@ -21,7 +21,7 @@
 
 /* Estilo para la lista de miembros del equipo */
 #equipo ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     font-size: 1.2em;
     color: #555;
@@ -31,7 +31,7 @@
     margin: 10px 0;
 }
 
-/* Estilo para la sección de Justificación */
+/* Justificación del Proyecto */
 #justificacion {
     margin-top: 40px;
     background-color: #ffffff;
@@ -70,15 +70,90 @@
     margin-left: 20px;
 }
 
+/* Pie de página */
 footer {
-    background-color: #333333;
-    color: white;
+    background-color: #000000; /* Fondo negro para el pie */
+    color: #ffffff;
     text-align: center;
     padding: 15px 0;
-    margin-top: 50px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 footer p {
     margin: 0;
     font-size: 1em;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small devices like smartphones */
+@media (max-width: 767px) {
+    #nosotros {
+        padding: 30px 15px;
+    }
+
+    #nosotros h1 {
+        font-size: 2.5em;
+    }
+
+    #nosotros p {
+        font-size: 1.1em;
+    }
+
+    #equipo ul li {
+        font-size: 1.1em;
+    }
+
+    .contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-justificacion {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .texto-justificacion {
+        width: 80%;
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
+/* For medium devices like tablets */
+@media (max-width: 1024px) {
+    #nosotros {
+        padding: 40px 20px;
+    }
+
+    #nosotros h1 {
+        font-size: 2.8em;
+    }
+
+    #nosotros p {
+        font-size: 1.2em;
+    }
+
+    .contenido {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .img-justificacion {
+        width: 48%;
+    }
+
+    .texto-justificacion {
+        width: 48%;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
 }

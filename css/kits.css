@@ -62,6 +62,7 @@
     background-color: #f39c12; /* Color amarillo para hover */
     color: #ffffff;
 }
+
 /* Estilos adicionales para los botones y los detalles de los kits */
 
 /* Botón "Ver Detalles" */
@@ -103,3 +104,96 @@
     font-size: 1.2em;
     color: #555555;
 }
+
+/* Media Queries for Responsiveness */
+
+/* For small devices like smartphones */
+@media (max-width: 767px) {
+    #kits {
+        padding: 40px 15px;
+    }
+
+    #kits h1 {
+        font-size: 2.5em;
+    }
+
+    #kits p {
+        font-size: 1.1em;
+    }
+
+    .kit {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .kit img {
+        max-width: 250px;
+    }
+
+    .kit h2 {
+        font-size: 1.8em;
+    }
+
+    .kit p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+
+    .detalles-kit h3 {
+        font-size: 1.8em;
+    }
+
+    .detalles-kit ul {
+        font-size: 1em;
+    }
+}
+
+/* For medium devices like tablets */
+@media (max-width: 1024px) {
+    #kits {
+        padding: 50px 20px;
+    }
+
+    #kits h1 {
+        font-size: 2.8em;
+    }
+
+    #kits p {
+        font-size: 1.2em;
+    }
+
+    .kit {
+        padding: 25px;
+        margin-bottom: 35px;
+    }
+
+    .kit img {
+        max-width: 280px;
+    }
+
+    .kit h2 {
+        font-size: 1.9em;
+    }
+
+    .kit p {
+        font-size: 1.1em;
+    }
+
+    .cta-button {
+        padding: 14px 28px;
+        font-size: 1.2em;
+    }
+
+    .detalles-kit h3 {
+        font-size: 2em;
+    }
+
+    .detalles-kit ul {
+        font-size: 1.1em;
+    }
+}
+

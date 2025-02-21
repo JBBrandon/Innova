@@ -6,31 +6,47 @@
     <title>Proyecto de Cultivo y Nutrición</title>
     <link rel="stylesheet" href="./css/styles.css">  <!-- Estilos comunes -->
     <link rel="stylesheet" href="./css/index.css">   <!-- Estilos específicos para index -->
+    <!-- Agregar el CDN de AOS para animaciones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-    <!-- Contenedor donde se insertará la navbar -->
-    
-        <!-- navbar.html -->
-    <nav id="navbar-container">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="kits.html">Kits de Cultivo</a></li>
-            <li><a href="recetas.html">Recetas</a></li>
-            <li><a href="nosotros.html">Sobre Nosotros</a></li>
-        </ul>
-    </nav>
-
     <!-- Sección de Bienvenida -->
-    <section id="hero">
-        <h1>Bienvenido a Nuestro Proyecto de Cultivo y Nutrición</h1>
-        <p>Descubre cómo cultivar tus propios alimentos y disfrutar de una alimentación saludable.</p>
-        <a href="kits.html" class="cta-button">Ver Kits</a>
+    <section id="hero" data-aos="fade-up">
+        <img src="./assets/img/inicio.webp" alt="Imagen de Cultivo y Nutrición" class="hero-img">
+        <div>
+            <h1>Bienvenido a Nuestro Proyecto de Cultivo y Nutrición</h1>
+            <p>Descubre cómo cultivar tus propios alimentos y disfrutar de una alimentación saludable.</p>
+            <a href="kits.html" class="cta-button">Ver Kits</a>
+        </div>
     </section>
 
     <!-- Sección Sobre Nosotros -->
-    <section id="about">
+    <section id="about" data-aos="fade-up">
         <h2>¿Qué ofrecemos?</h2>
         <p>Ofrecemos kits de cultivo con semillas, manuales de cultivo, recetas saludables y cursos educativos. Aprende y cultiva mientras mejoras tu nutrición.</p>
+    </section>
+
+    <!-- Sección de Beneficios -->
+    <section id="benefits" data-aos="fade-up">
+        <h2>Beneficios de Unirte a Nuestro Proyecto</h2>
+        <div class="benefit" data-aos="zoom-in">
+            <img src="./assets/img/imagen1.webp" alt="Beneficio 1">
+            <p>Obtén kits de cultivo con todo lo necesario para empezar en tu hogar.</p>
+        </div>
+        <div class="benefit" data-aos="zoom-in">
+            <img src="./assets/img/imagen2.webp" alt="Beneficio 2">
+            <p>Accede a recetas saludables que mejorarán tu alimentación.</p>
+        </div>
+        <div class="benefit" data-aos="zoom-in">
+            <img src="./assets/img/imagen4.webp" alt="Beneficio 3">
+            <p>Aprende sobre nutrición y cultivo sostenible con nuestros cursos educativos.</p>
+        </div>
+    </section>
+
+    <!-- Llamado a la acción -->
+    <section id="cta" data-aos="fade-up">
+        <h2>¡Comienza tu viaje hacia una vida más saludable hoy!</h2>
+        <a href="kits.html" class="cta-button">Compra tu Kit de Cultivo</a>
     </section>
 
     <!-- Pie de página -->
@@ -38,5 +54,16 @@
         <p>&copy; 2025 Proyecto de Cultivo y Nutrición | Todos los derechos reservados</p>
     </footer>
 
+    <script src="./js/script.js"></script>
+    <!-- Inicializa AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.onload = function() {
+            AOS.init({
+                duration: 1000,  // Duración de la animación
+                once: true        // Solo se ejecuta una vez
+            });
+        };
+    </script>
 </body>
 </html>

@@ -8,36 +8,47 @@ body {
     padding: 0;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 /* Estilos para la barra de navegación */
 #navbar-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px; /* Asegúrate de que tenga una altura suficiente */
+    height: 60px;
     background-color: #C0392B; /* Rojo oscuro */
-    z-index: 1000; /* Asegúrate de que el navbar esté por encima de otros elementos */
-    padding: 10px 0;
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+    padding: 10px 20px;
     display: flex;
-    justify-content: center;  /* Centrado del contenido */
-    align-items: center;  /* Alineación vertical */
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Contenedor para el icono de la hamburguesa y el título */
+#navbar-title-container {
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+}
+
+#navbar-title {
+    font-size: 1.5em;
+    color: white;
+    margin-left: 10px; /* Espacio entre el icono y el título */
+    font-weight: bold;
+}
+
+/* Lista de enlaces en el navbar */
 #navbar-container ul {
     list-style: none;
     display: flex;
-    justify-content: center;  /* Centra los elementos de la lista */
+    justify-content: flex-start; /* Alineación de los elementos del menú */
     margin: 0;
     padding: 0;
+    width: 50%; /* Asegura que el menú ocupe solo el 50% del navbar */
 }
 
 #navbar-container ul li {
-    margin: 0 20px;  /* Separación entre los elementos */
+    margin: 0 15px; /* Reducir el margen entre los elementos */
 }
 
 #navbar-container ul li a {
@@ -51,11 +62,30 @@ a {
     color: #f39c12; /* Color dorado al pasar el cursor */
 }
 
+/* Estilo para el icono hamburguesa (solo visible en móviles) */
+.hamburger-icon {
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    display: none; /* Ocultar el icono por defecto */
+}
+
+/* Mostrar el menú cuando se activa la clase "active" */
+#navbar-container ul.active {
+    display: flex;
+    flex-direction: column;  /* Asegura que el menú se muestre en columna */
+    position: absolute;
+    top: 60px;  /* Asegura que el menú hamburguesa esté debajo del navbar */
+    left: 0;
+    background-color: #C0392B;
+    width: 100%;
+    z-index: 999;
+}
 
 /* Pie de página */
 footer {
-    background-color: #000000; /* Fondo negro para el pie */
-    color: #ffffff;
+    background-color: #000000;
+    color: white;
     text-align: center;
     padding: 15px 0;
     position: fixed;
@@ -66,4 +96,61 @@ footer {
 footer p {
     margin: 0;
     font-size: 1em;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    #navbar-container {
+        padding: 10px; /* Reducir el padding del navbar en pantallas pequeñas */
+    }
+
+    #navbar-container ul {
+        display: none;  /* Ocultar el menú en pantallas pequeñas */
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 60px;  /* Asegura que el menú hamburguesa esté debajo del navbar */
+        left: 0;
+        background-color: #C0392B; /* Color del fondo del menú */
+        z-index: 999; /* Asegura que esté por encima del contenido */
+    }
+
+    #navbar-container ul li {
+        margin: 15px 0;  /* Reducir el margen entre los elementos */
+    }
+    #navbar-title{
+        margin-left: 7rem;
+    }
+
+    .hamburger-icon {
+        display: block;  /* Mostrar el icono hamburguesa solo en pantallas pequeñas */
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+}
+
+/* Para pantallas más grandes (tabletas y escritorios) */
+@media (min-width: 768px) {
+    #navbar-container {
+        padding: 10px 20px; /* Asegura que haya suficiente espacio en pantallas grandes */
+    }
+
+    #navbar-container ul {
+        display: flex;  /* Mostrar el menú horizontalmente en pantallas grandes */
+        justify-content: flex-start;
+    }
+
+    .hamburger-icon {
+        display: none; /* Ocultar el icono en pantallas grandes */
+    }
+
+    footer p {
+        font-size: 1em;
+    }
 }
